@@ -40,6 +40,7 @@ module ActionView
       options = defaults.merge(options)
       list_items = records.collect {|c| "
         <li class=\"ui-state-default\">
+          <span class=\"ui-icon ui-icon-arrowthick-2-n-s\"></span>
           <a href=\"#\" class=\"hma-remove-link\" data-id=\"#{c[1]}\"><span class=\"hma-remove-link-text\">#{options[:remove_text]}</span></a>
           <span class=\"hma-item-label\">#{c[0]}</span>
         </li>"
