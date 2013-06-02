@@ -39,7 +39,7 @@ module ActionView
       defaults = {:remove_text => "Remove"}
       options = defaults.merge(options)
       list_items = records.collect {|c| "
-        <li>
+        <li class=\"ui-state-default\">
           <a href=\"#\" class=\"hma-remove-link\" data-id=\"#{c[1]}\"><span class=\"hma-remove-link-text\">#{options[:remove_text]}</span></a>
           <span class=\"hma-item-label\">#{c[0]}</span>
         </li>"
